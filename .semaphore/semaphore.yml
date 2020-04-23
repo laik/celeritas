@@ -3,9 +3,10 @@ name: Rust
 agent:
   machine:
     type: e1-standard-2
+    os_image: ubuntu1804
   containers:
     - name: main
-      image: rust:1.38.0
+      image: 'rust:1.38.0'
 blocks:
   - name: Test
     task:
