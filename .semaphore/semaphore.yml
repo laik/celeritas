@@ -16,3 +16,9 @@ blocks:
             - checkout
             - cargo build --verbose
             - cargo test --verbose
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: rust build
+          commands:
+            - rust build --release
